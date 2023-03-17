@@ -1,40 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Electron</title>
-  <link rel="stylesheet" href="./main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Prata&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header-top">
-        <div class="container">
-          <div class="wrap-header-top">
-            <div class="header-left">
-              Need help? Call us: (+98) 0234 456 789
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Electron</title>
+        <link rel="stylesheet" href="./main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Prata&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header-top">
+                    <div class="container">
+                        <div class="wrap-header-top">
+                            <div class="header-top--left">
+                                Need help? Call us: (+98) 0234 456 789
+                            </div>
+                            <div class="header-top--right">
+                                <div class="our-store">
+                                    <img src="./images/location.png" alt="location">
+                                    <p>Our store</p>
+                                </div>
+                                <div class="track">
+                                    <img src="./images/delivery.png" alt="delivery">
+                                    <p>Track your order</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="container">
+                        <div class="wrap-header-bottom">
+                            <div class="header-bottom--left">
+                                <img src="./images/logo1.png" alt="logo">
+                                <div class="search-box">
+                                    <input type="text" placeholder="Search any things">
+                                    <button type="button">Search</button>
+                                </div>
+                            </div>
+                            <div class="header-bottom--right">
+                                <div class="user">
+                                    <img class="user-img" src="./images/user.png" alt="user">
+                                    <span>Sign in</span>
+                                </div>
+                                <div class="favorite">
+                                    <div class="favorite-amount">
+                                        <img src="./images/favorite.png" alt="favorite">
+                                        <span class="amount">0</span>
+                                    </div>
+                                    <span>Favorite</span>
+                                </div>
+                                <div class="cart">
+                                    <div class="cart-amount">
+                                        <img src="./images/cart.png" alt="cart">
+                                        <span class="amount">0</span>
+                                    </div>
+                                    <span>Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-            <div class="header-right">
-              <div class="our-store">
-                <img src="./images/location.png" alt="location">
-                <p>Our store</p>
-              </div>
-  
-              <div class="track">
-                <img src="./images/delivery.png" alt="delivery">
-                <p>Track your order</p>
-              </div>
-            </div>
-          </div>
+            <nav>
+                <div class="wrap-navbar container">
+                    <div class="navbar-left">
+                        <div class="category">
+                            <a href="#">Browser categories</a>
+                            <img src="./images/arrow-down.png" alt="ar-down-bk">
+                        </div>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                    <img src="./images/arrow-down-black.png" alt="ar-down">
+                                </li>
+                                <li>
+                                    <a href="#">Catalog</a>
+                                    <img src="./images/arrow-down-black.png" alt="ar-down">
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <img src="./images/arrow-down-black.png" alt="ar-down">
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="navbar-right">
+                        30 Days Free Return
+                    </div>
+                </div>
+            </nav>
+
+            <main>
+                <div class="container">
+                    <div class="banner">
+                        <div class="banner-text">
+                            <div class="banner-text--top">
+                                <p>Canon camera</p>
+
+                                <div class="wrap-btn">
+                                    <button class="btn-shop">Shop now</button>
+                                    <button class="btn-view">View more</button>
+                                </div>
+                            </div>
+
+                            <img class="banner-text--bot" src="./images/threedots.png">
+                        </div>
+
+                        <div class="banner-image"><img src="./images/banner-camera.png" alt="camera-slier"></div>
+                    </div>
+
+                    <div class="wrap-slider">
+                        <div class="wrap-left">
+                            <img class="left" src="./images/arrow-left.png" alt="arr-left">
+                        </div>
+
+                        <div class="wrap-right">
+                            <img class="right" src="./images/arrow-right.png" alt="arr-right">
+                        </div>
+
+                        <div class="slider">
+                            <div class="slider-item">
+                                <img src="./images/speaker-slider.png" alt="speak">
+                                <div class="slider-item--text">
+                                    <p>Speaker</p>
+                                    <span>(6 items)</span>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <img src="./images/laptop-slider.png" alt="speak">
+                                <div class="slider-item--text">
+                                    <p>Speaker</p>
+                                    <span>(6 items)</span>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <img src="./images/camera-slider.png" alt="speak">
+                                <div class="slider-item--text">
+                                    <p>Speaker</p>
+                                    <span>(6 items)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="categories">
+                        <h2>Popular products</h2>
+
+                        <div class="categories-filter">
+                            <div class="filter-items">
+                                <p>Cameras</p>
+                            </div>
+                            <div class="filter-items">
+                                <p>Laptops</p>
+                            </div>
+                            <div class="filter-items">
+                                <p>Tables</p>
+                            </div>
+                            <div class="filter-items">
+                                <p>Mouse</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products">
+                        <div class="products-items">
+                            <div class="products-img">
+                                <div class="border">
+                                    <img src="./images/heart-sm.png" alt="favorite">
+                                </div>
+
+                                <img class="avatar" src="./images/camera-products.png" alt="product">
+                            </div>
+
+                            <div class="products-description">
+                                <p class="name">Wireless Headphones</p>
+                                <p class="price">$11,70</p>
+                                <img src="./images/vote-star.png" alt="vote">
+                            </div>
+
+                            <div class="wrap-add-cart">
+                                <div class="add-cart">
+                                    <div class="add">
+                                        <span>Add to cart</span>
+                                        <div class="border">
+                                            <img src="./images/shopping-cart.png" alt="add">
+                                        </div>
+                                    </div>
+
+                                    <div class="detail">
+                                        <img src="./images/eye.png" alt="detail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-items">
+                            <div class="products-img">
+                                <div class="border">
+                                    <img src="./images/heart-sm.png" alt="favorite">
+                                </div>
+
+                                <img class="avatar" src="./images/camera-products.png" alt="product">
+                            </div>
+
+                            <div class="products-description">
+                                <p class="name">Wireless Headphones</p>
+                                <p class="price">$11,70</p>
+                                <img src="./images/vote-star.png" alt="vote">
+                            </div>
+
+                            <div class="wrap-add-cart">
+                                <div class="add-cart">
+                                    <div class="add">
+                                        <span>Add to cart</span>
+                                        <div class="border">
+                                            <img src="./images/shopping-cart.png" alt="add">
+                                        </div>
+                                    </div>
+
+                                    <div class="detail">
+                                        <img src="./images/eye.png" alt="detail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-items">
+                            <div class="products-img">
+                                <div class="border">
+                                    <img src="./images/heart-sm.png" alt="favorite">
+                                </div>
+
+                                <img class="avatar" src="./images/camera-products.png" alt="product">
+                            </div>
+
+                            <div class="products-description">
+                                <p class="name">Wireless Headphones</p>
+                                <p class="price">$11,70</p>
+                                <img src="./images/vote-star.png" alt="vote">
+                            </div>
+
+                            <div class="wrap-add-cart">
+                                <div class="add-cart">
+                                    <div class="add">
+                                        <span>Add to cart</span>
+                                        <div class="border">
+                                            <img src="./images/shopping-cart.png" alt="add">
+                                        </div>
+                                    </div>
+
+                                    <div class="detail">
+                                        <img src="./images/eye.png" alt="detail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-items">
+                            <div class="products-img">
+                                <div class="border">
+                                    <img src="./images/heart-sm.png" alt="favorite">
+                                </div>
+
+                                <img class="avatar" src="./images/camera-products.png" alt="product">
+                            </div>
+
+                            <div class="products-description">
+                                <p class="name">Wireless Headphones</p>
+                                <p class="price">$11,70</p>
+                                <img src="./images/vote-star.png" alt="vote">
+                            </div>
+
+                            <div class="wrap-add-cart">
+                                <div class="add-cart">
+                                    <div class="add">
+                                        <span>Add to cart</span>
+                                        <div class="border">
+                                            <img src="./images/shopping-cart.png" alt="add">
+                                        </div>
+                                    </div>
+
+                                    <div class="detail">
+                                        <img src="./images/eye.png" alt="detail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-items">
+                            <div class="products-img">
+                                <div class="border">
+                                    <img src="./images/heart-sm.png" alt="favorite">
+                                </div>
+
+                                <img class="avatar" src="./images/camera-products.png" alt="product">
+                            </div>
+
+                            <div class="products-description">
+                                <p class="name">Wireless Headphones</p>
+                                <p class="price">$11,70</p>
+                                <img src="./images/vote-star.png" alt="vote">
+                            </div>
+
+                            <div class="wrap-add-cart">
+                                <div class="add-cart">
+                                    <div class="add">
+                                        <span>Add to cart</span>
+                                        <div class="border">
+                                            <img src="./images/shopping-cart.png" alt="add">
+                                        </div>
+                                    </div>
+
+                                    <div class="detail">
+                                        <img src="./images/eye.png" alt="detail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-items">
+                            <div class="products-img">
+                                <div class="border">
+                                    <img src="./images/heart-sm.png" alt="favorite">
+                                </div>
+
+                                <img class="avatar" src="./images/camera-products.png" alt="product">
+                            </div>
+
+                            <div class="products-description">
+                                <p class="name">Wireless Headphones</p>
+                                <p class="price">$11,70</p>
+                                <img src="./images/vote-star.png" alt="vote">
+                            </div>
+
+                            <div class="wrap-add-cart">
+                                <div class="add-cart">
+                                    <div class="add">
+                                        <span>Add to cart</span>
+                                        <div class="border">
+                                            <img src="./images/shopping-cart.png" alt="add">
+                                        </div>
+                                    </div>
+
+                                    <div class="detail">
+                                        <img src="./images/eye.png" alt="detail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-items">
+                            <div class="products-img">
+                                <div class="border">
+                                    <img src="./images/heart-sm.png" alt="favorite">
+                                </div>
+
+                                <img class="avatar" src="./images/camera-products.png" alt="product">
+                            </div>
+
+                            <div class="products-description">
+                                <p class="name">Wireless Headphones</p>
+                                <p class="price">$11,70</p>
+                                <img src="./images/vote-star.png" alt="vote">
+                            </div>
+
+                            <div class="wrap-add-cart">
+                                <div class="add-cart">
+                                    <div class="add">
+                                        <span>Add to cart</span>
+                                        <div class="border">
+                                            <img src="./images/shopping-cart.png" alt="add">
+                                        </div>
+                                    </div>
+
+                                    <div class="detail">
+                                        <img src="./images/eye.png" alt="detail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="products-items">
+                            <div class="products-img">
+                                <div class="border">
+                                    <img src="./images/heart-sm.png" alt="favorite">
+                                </div>
+
+                                <img class="avatar" src="./images/camera-products.png" alt="product">
+                            </div>
+
+                            <div class="products-description">
+                                <p class="name">Wireless Headphones</p>
+                                <p class="price">$11,70</p>
+                                <img src="./images/vote-star.png" alt="vote">
+                            </div>
+
+                            <div class="wrap-add-cart">
+                                <div class="add-cart">
+                                    <div class="add">
+                                        <span>Add to cart</span>
+                                        <div class="border">
+                                            <img src="./images/shopping-cart.png" alt="add">
+                                        </div>
+                                    </div>
+
+                                    <div class="detail">
+                                        <img src="./images/eye.png" alt="detail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-dots">
+                        <img src="./images/threedots.png" alt="dots">
+                    </div>
+
+                    <section>
+                        <div class="sale-up">
+                            <div class="wrap-sale-up">
+                                <div class="sale-up-content">
+                                    <button type="button">New laptop</button>
+                                    <div class="text-content">
+                                        <p>sale up to 50% off</p>
+                                        <span>12 inch hd display</span>
+                                    </div>
+                                    <button type="button">Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="favorite-products">
+                            <div class="favorite-products--left">
+                                <div class="content">
+                                    <div class="wrap-img">
+                                        <img src="./images/deepbass.png" alt="deepbass">
+                                    </div>
+    
+                                    <div class="add-cart">
+                                        <div class="add-cart--top">
+                                            <p>JBL bar 2.1 deep bass</p>
+                                            <p class="price">$11,70</p>
+                                            <img src="./images/vote-star.png" alt="vote">
+                                        </div>
+    
+                                        <div class="add-cart--mid">
+                                            <div class="circle-digits">
+                                                <span>57</span>
+                                            </div>
+                                            <div class="circle-digits">
+                                                <span>11</span>
+                                            </div>
+                                            <div class="circle-digits">
+                                                <span>33</span>
+                                            </div>
+                                            <div class="circle-digits">
+                                                <span>59</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="add-cart--bottom">
+                                            <button class="add" type="button">
+                                                Add to cart
+                                                <div class="border">
+                                                    <img src="./images/shopping-cart.png" alt="shopping">
+                                                </div>
+                                            </button>
+                                            <button class="detail" type="button">
+                                                <img src="./images/eye.png" alt="detail">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <img class="dots" src="./images/2dot.png" alt="dots">
+                            </div>
+
+                            <div class="favorite-products--right">
+                                <div class="products-right-items">
+                                    <div class="wrap-img">
+                                        <img src="./images/gamepad.png" alt="gamepad">
+                                    </div>
+                                    
+                                    <div class="infor">
+                                        <p class="name">Play game</p>
+                                        <p class="price">$11.70</p>
+                                        <img src="./images/vote-star.png" alt="vote">
+                                    </div>
+                                </div>
+
+                                <div class="products-right-items">
+                                    <div class="wrap-img">
+                                        <img src="./images/laptop-vote.png" alt="laptop">
+                                    </div>
+                                    
+                                    <div class="infor">
+                                        <p class="name">Play game</p>
+                                        <p class="price">$11.70</p>
+                                        <img src="./images/vote-star.png" alt="vote">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <footer>
+                <div class="footer"></div>
+            </footer>
         </div>
-      </div>
-    </header>
-  </div>
-</body>
+    </body>
 </html>
