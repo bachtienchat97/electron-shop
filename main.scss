@@ -847,7 +847,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 48px;
-    
+
     .wrap-client-cart {
       display: flex;
       align-items: center;
@@ -860,7 +860,6 @@ body {
       padding: 17px;
       border-radius: 20px;
       border: 1px solid #BABABA;
-
     }
 
     &-content {
@@ -901,10 +900,12 @@ body {
     }
   }
 
+  //sponsor
   .sponsor {
     background-color: #E2F4FF;
     border-radius: 20px;
     padding: 47px 32px;
+    margin-bottom: 107px;
 
     &-content {
       display: flex;
@@ -914,6 +915,113 @@ body {
 
     img {
       object-fit: cover;
+    }
+  }
+
+  //news
+  .news {
+    margin-bottom: 101px;
+    
+    
+
+    &-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 52px;
+      color: #1B5A7D;
+
+      h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: calc(38 / 25);
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(30 / 20);
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-slider {
+      display: flex;
+      margin-bottom: 40px;
+      align-items: center;
+      flex-direction: column;
+      .dots {
+        object-fit: cover;
+      }
+
+      &-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-right: -20px;
+      }
+
+      &-items {
+        margin-right: 20px;
+        padding: 40px 16px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #C8C8C8;
+        border-radius: 20px;
+        img {
+          object-fit: cover;
+          margin-right: 34px;
+        }
+      }
+    }
+
+    .blog {
+      display: flex;
+      color: #1B5A7D;
+      flex-direction: column;
+      align-items: start;
+
+      &-date {
+        padding: 5px 18px;
+        border-radius: 20px;
+        gap: 10px;
+        border: 1px solid #D4D4D4;
+
+        span {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: calc(31 / 20);
+        }
+      }
+
+      &-author {
+        font-size: 13px;
+        ;
+        line-height: calc(20 / 13);
+        font-weight: 400;
+      }
+
+      &-content {
+        margin-top: 19px;
+        margin-bottom: 43px;
+        font-weight: 400;
+        color: #003F62;
+        font-size: 13px;
+        ;
+        line-height: calc(20 / 13);
+      }
+
+      &-title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: calc(34 / 22);
+        margin-top: 9px;
+        color: #003F62;
+      }
     }
   }
 }
