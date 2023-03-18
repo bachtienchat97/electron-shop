@@ -777,6 +777,7 @@ body {
   background-color: #E2F4FF;
   border-radius: 20px;
   padding: 47px 32px;
+  margin-bottom: 107px;
 }
 .wrapper .sponsor-content {
   display: flex;
@@ -786,6 +787,96 @@ body {
 .wrapper .sponsor img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.wrapper .news {
+  margin-bottom: 101px;
+}
+.wrapper .news-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 52px;
+  color: #1B5A7D;
+}
+.wrapper .news-heading h2 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.52;
+}
+.wrapper .news-heading span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.wrapper .news-heading span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.wrapper .news-slider {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .news-slider .dots {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .news-slider-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-right: -20px;
+}
+.wrapper .news-slider-items {
+  margin-right: 20px;
+  padding: 40px 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #C8C8C8;
+  border-radius: 20px;
+}
+.wrapper .news-slider-items img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 34px;
+}
+.wrapper .news .blog {
+  display: flex;
+  color: #1B5A7D;
+  flex-direction: column;
+  align-items: start;
+}
+.wrapper .news .blog-date {
+  padding: 5px 18px;
+  border-radius: 20px;
+  gap: 10px;
+  border: 1px solid #D4D4D4;
+}
+.wrapper .news .blog-date span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.55;
+}
+.wrapper .news .blog-author {
+  font-size: 13px;
+  line-height: 1.5384615385;
+  font-weight: 400;
+}
+.wrapper .news .blog-content {
+  margin-top: 19px;
+  margin-bottom: 43px;
+  font-weight: 400;
+  color: #003F62;
+  font-size: 13px;
+  line-height: 1.5384615385;
+}
+.wrapper .news .blog-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5454545455;
+  margin-top: 9px;
+  color: #003F62;
 }
 
 .footer {
